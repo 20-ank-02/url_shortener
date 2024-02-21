@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urls</title>
+  </head>
+  <body>
+    <h1>Urls</h1>
+    <table>
+      <tr>
+        <td>URL</td>
+        <td>Shortened-URL</td>
+      </tr>
+      <% for(let i = 0; i < urls.length; i++) { %>
+      <tr>
+        <td><%= urls[i]["redirectURL"] %></td>
+        <td><%= urls[i]["shortId"] %></td>
+      </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
