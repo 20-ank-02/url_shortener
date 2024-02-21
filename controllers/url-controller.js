@@ -28,7 +28,7 @@ async function handleShowCollections(req, res) {
   if (req.query.admin === "ankit") {
     URL.find()
       .then((urls) => {
-        res.json(urls);
+        res.render("listUrls", { urls: urls });
       })
       .catch((error) => {
         console.log("Error while fetching documents | error:", error);
